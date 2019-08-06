@@ -790,3 +790,9 @@ static void put_a_line(
     if (mcpp_fputs( out, OUT) == EOF)
         cfatal( "File write error", NULL, 0L, NULL);        /* _F_  */
 }
+
+int
+main(int argc, char *argv[])
+{
+    return mcpp_lib_main(argc, argv);
+}

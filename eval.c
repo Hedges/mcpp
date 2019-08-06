@@ -543,9 +543,9 @@ static int  chk_ops( void)
     switch (openum) {
     case OP_STR:    case OP_CAT:    case OP_ELL:
     case OP_1:      case OP_2:      case OP_3:
-        cerror( "Can't use the operator \"%s\""             /* _E_  */
-                , work_buf, 0L, NULL);
-        return  OP_FAIL;
+        //cerror( "Can't use the operator \"%s\""             /* _E_  */
+        //        , work_buf, 0L, NULL);
+        return  INV;// OP_FAIL;
     default:
         return  openum;
     }

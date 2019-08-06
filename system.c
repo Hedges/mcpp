@@ -406,7 +406,7 @@ opt_search: ;
     chk_opts( sflag, trad);
 
     if (warn_level == -1)               /* No -W option             */
-        warn_level = 1;                 /* Default warning level    */
+        warn_level = 0;                 /* Default warning level    */
     else if (warn_level == 0xFF)
         warn_level = 0;                 /* -W0 has high precedence  */
 
